@@ -8,6 +8,7 @@ import { createAiRouter } from './ai/ai.router.js';
 import { errorHandler } from './middlewares/errorHandler.js';
 import { ProductsService } from './products/products.service.js';
 import { AiService } from './ai/ai.service.js';
+import swaggerDocument from './docs/swagger.js';
 
 export interface AppDependencies {
   productsService: ProductsService;
@@ -29,6 +30,8 @@ export function createApp({ productsService, aiService }: AppDependencies): Expr
 
   app.use('/api', createProductsRouter(productsService));
   app.use('/api', createAiRouter(aiService));
+
+  app.use('/api/docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
   app.use((req, res) => {
     res.status(404).json({ status: 404, message: `Route ${req.originalUrl} not found` });
