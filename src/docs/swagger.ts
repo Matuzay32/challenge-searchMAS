@@ -131,7 +131,8 @@ const swaggerDocument = {
                   file: {
                     type: 'string',
                     format: 'binary',
-                    description: 'Archivo CSV con columnas id, extId, title, description, price, category, image, aiSummary',
+                    description:
+                      'Archivo CSV con columnas id, extId, title, description, price, category, image, aiSummary',
                   },
                 },
               },
@@ -606,7 +607,7 @@ const swaggerDocument = {
           image: {
             type: 'string',
             format: 'uri',
-            example: 'https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg',
+            example: 'https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_t.png',
           },
           aiSummary: {
             type: 'string',
@@ -751,7 +752,7 @@ const swaggerDocument = {
           image: {
             type: 'string',
             format: 'uri',
-            example: 'https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg',
+            example: 'https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_t.png',
           },
           aiSummary: {
             type: 'string',
@@ -777,7 +778,7 @@ const swaggerDocument = {
           image: {
             type: 'string',
             format: 'uri',
-            example: 'https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg',
+            example: 'https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_t.png',
           },
           aiSummary: {
             type: 'string',
